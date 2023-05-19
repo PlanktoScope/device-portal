@@ -14,7 +14,7 @@
     "@rollup/plugin-replace": "^5.0.2",
     "@sargassum-world/styles": "^0.2.2",
     "bulma": "^0.9.4",
-    "eslint": "^8.40.0",
+    "eslint": "^8.41.0",
     "eslint-plugin-import": "^2.27.5",
     "prettier": "^2.8.8",
     "purify-css": "^1.2.5",
