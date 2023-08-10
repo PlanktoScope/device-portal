@@ -60,15 +60,15 @@
   resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.46.0.tgz#3f7802972e8b6fe3f88ed1aabc74ec596c456db6"
   integrity sha512-a8TLtmPi8xzPkCbp/OGFUo5yhRkHM2Ko9kOWP4znJr0WAhWyThaw3PnwX4vOTWOAMsV2uRt32PPDcEz63esSaA==
 
-"@fontsource/atkinson-hyperlegible@^5.0.7":
-  version "5.0.7"
-  resolved "https://registry.yarnpkg.com/@fontsource/atkinson-hyperlegible/-/atkinson-hyperlegible-5.0.7.tgz#99f1f645c3eed782db43a49e4dd881132fc80ecc"
-  integrity sha512-yWkYSp9YRHTgOSE7p2gk+YXL+pYENHbCe5n8hkcAuSNg7cXrEor7rqhp3r6USmRvCugoCthOJx4e0LwDHKA5cg==
+"@fontsource/atkinson-hyperlegible@^5.0.8":
+  version "5.0.8"
+  resolved "https://registry.yarnpkg.com/@fontsource/atkinson-hyperlegible/-/atkinson-hyperlegible-5.0.8.tgz#556781aff29ff1095325d4c8ca4ee9ff35dfab92"
+  integrity sha512-IvgsBF8cEaesG1XoyS53vtBrGmD7x8nnp97Aw6Wly5tO6KsJ5shk4cFjEaI8Cr5ve61AEaLp2PcEl7fXVssUYQ==
 
-"@fontsource/oxygen-mono@^5.0.7":
-  version "5.0.7"
-  resolved "https://registry.yarnpkg.com/@fontsource/oxygen-mono/-/oxygen-mono-5.0.7.tgz#68ab1d1db36a8046e0246c382e61adf8aa23a373"
-  integrity sha512-yyWuagCucc1/Zqu5wnpIE/VCG8Nw1J4bOvV6//i+bPnfshO1LczIsaMuZYLlXgbYSL71eP5bzg4rwqUGFPYmLA==
+"@fontsource/oxygen-mono@^5.0.8":
+  version "5.0.8"
+  resolved "https://registry.yarnpkg.com/@fontsource/oxygen-mono/-/oxygen-mono-5.0.8.tgz#5ba5c61b02515c0405d0a2e11d094315941f9c26"
+  integrity sha512-fzSrGY7tR4tsvLHbWlZTyO2y8KT2LajXhwh47EgV31Yj8lM0IuOLljWeRskzUFlERuvG4nZNFMovDNBPTvRu0Q==
 
 "@humanwhocodes/config-array@^0.11.10":
   version "0.11.10"
@@ -2077,10 +2077,10 @@ rollup-pluginutils@^2.3.3:
   dependencies:
     estree-walker "^0.6.1"
 
-rollup@^3.27.1:
-  version "3.27.1"
-  resolved "https://registry.yarnpkg.com/rollup/-/rollup-3.27.1.tgz#e6c7340889f33042b4c3247a2acb38ebcfc3a98c"
-  integrity sha512-tXNDFwOkN6C2w5Blj1g6ForKeFw6c1mDu5jxoeDO3/pmYjgt+8yvIFjKzH5FQUq70OKZBkOt0zzv0THXL7vwzQ==
+rollup@^3.28.0:
+  version "3.28.0"
+  resolved "https://registry.yarnpkg.com/rollup/-/rollup-3.28.0.tgz#a3c70004b01934760c0cb8df717c7a1d932389a2"
+  integrity sha512-d7zhvo1OUY2SXSM6pfNjgD5+d0Nz87CUp4mt8l/GgVP3oBsPwzNvSzyu1me6BSG9JIgWNTVcafIXBIyM8yQ3yw==
   optionalDependencies:
     fsevents "~2.3.2"
 
@@ -2115,10 +2115,10 @@ safe-regex-test@^1.0.0:
     get-intrinsic "^1.1.3"
     is-regex "^1.1.4"
 
-sass@^1.64.2:
-  version "1.64.2"
-  resolved "https://registry.yarnpkg.com/sass/-/sass-1.64.2.tgz#0d9805ad6acf31c59c3acc725fcfb91b7fcc6909"
-  integrity sha512-TnDlfc+CRnUAgLO9D8cQLFu/GIjJIzJCGkE7o4ekIGQOH7T3GetiRR/PsTWJUHhkzcSPrARkPI+gNWn5alCzDg==
+sass@^1.65.1:
+  version "1.65.1"
+  resolved "https://registry.yarnpkg.com/sass/-/sass-1.65.1.tgz#8f283b0c26335a88246a448d22e1342ba2ea1432"
+  integrity sha512-9DINwtHmA41SEd36eVPQ9BJKpn7eKDQmUHmpI0y5Zv2Rcorrh0zS+cFrt050hdNbmmCNKTW3hV5mWfuegNRsEA==
   dependencies:
     chokidar ">=3.0.0 <4.0.0"
     immutable "^4.0.0"
