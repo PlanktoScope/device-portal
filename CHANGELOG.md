@@ -8,6 +8,12 @@ All dates in this file are given in the [UTC time zone](https://en.wikipedia.org
 
 ## Unreleased
 
+## 0.1.6 - 2023-08-10
+
+### Changed
+
+- Moved links for Cockpit, the system file manager, Portainer, and the Node-RED dashboard editor into the "For advanced users" section of the home page.
+
 ## 0.1.5 - 2023-05-26
 
 ### Added
