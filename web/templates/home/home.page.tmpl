@@ -44,43 +44,6 @@
             Provides a file browsing and management interface for the datasets collected by the PlanktoScope
           </li>
         </ul>
-        <p>System administration and troubleshooting:</p>
-        <ul>
-          <li>
-            <strong><a href="/admin/cockpit/">Cockpit</a></strong>:
-            Provides a general-purpose system administration dashboard for the computer embedded in
-            the PlanktoScope
-          </li>
-          <li>
-            <strong><a href="/admin/fs/">System file manager</a></strong>:
-            Provides a file browsing and management interface for the entire filesystem of the
-            computer embedded in the PlanktoScope
-          </li>
-          <li>
-            <strong><a href="/admin/portainer/">Portainer</a></strong>:
-            Provides a Docker administration dashboard
-          </li>
-        </ul>
-        <p>Software development:</p>
-        <ul>
-          <li>
-            <strong><a href="/admin/ps/node-red-v2/">Node-RED dashboard editor</a></strong>:
-            Provides a Node-RED flow editor to modify the Node-RED dashboard
-          </li>
-        </ul>
-        <p>System recovery:</p>
-        <ul>
-          <li>
-            <strong><a href="//{{$hostname}}:9090/admin/cockpit/">Cockpit (direct-access fallback)</a></strong>:
-            Provides fallback access to the Cockpit application, accessible even if the system's
-            service proxy stops working
-          </li>
-          <li>
-            <strong><a href="//{{$hostname}}:9000">Portainer (direct-access fallback)</a></strong>:
-            Provides fallback access to the Portainer application, accessible even if the system's
-            service proxy stops working
-          </li>
-        </ul>
 
         <h2>Need help?</h2>
 
@@ -147,6 +110,48 @@
 
         <h2>For advanced users</h2>
 
+        <h3 class="is-size-5">Browser applications</h3>
+        <p>System administration and troubleshooting:</p>
+        <ul>
+          <li>
+            <strong><a href="/admin/cockpit/">Cockpit</a></strong>:
+            Provides a general-purpose system administration dashboard for the computer embedded in
+            the PlanktoScope
+          </li>
+          <li>
+            <strong><a href="/admin/fs/">System file manager</a></strong>:
+            Provides a file browsing and management interface for the entire filesystem of the
+            computer embedded in the PlanktoScope
+          </li>
+          <li>
+            <strong><a href="/admin/portainer/">Portainer</a></strong>:
+            Provides a Docker administration dashboard
+          </li>
+        </ul>
+        <p>Software development:</p>
+        <ul>
+          <li>
+            <strong><a href="/admin/ps/node-red-v2/">Node-RED dashboard editor</a></strong>:
+            Provides a Node-RED flow editor to modify the Node-RED dashboard
+          </li>
+        </ul>
+        <p>System recovery:</p>
+        <ul>
+          <li>
+            <strong><a href="//{{$hostname}}:9090/admin/cockpit/">
+              Cockpit (direct-access fallback)
+              {{- /* make template ignore the line break */ -}}
+            </a></strong>:
+            Provides fallback access to the Cockpit application, accessible even if the system's
+            service proxy stops working
+          </li>
+          <li>
+            <strong><a href="//{{$hostname}}:9000">Portainer (direct-access fallback)</a></strong>:
+            Provides fallback access to the Portainer application, accessible even if the system's
+            service proxy stops working
+          </li>
+        </ul>
+
         <h3 class="is-size-5">Network APIs</h3>
         <p>PlanktoScope operation:</p>
         <ul>
@@ -187,10 +192,6 @@
           <li>
             <strong>MQTT broker</strong>:
             Provides a broker for MQTT messages at <code>{{$hostname}}:1883</code>
-          </li>
-          <li>
-            <strong>Portainer Edge Agent tunnel</strong>:
-            Provides a TLS tunnel server at <code>{{$hostname}}:8008</code> which Portainer Edge Agents can connect to
           </li>
           <li>
             <strong>Service proxy</strong>:
