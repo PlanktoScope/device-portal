@@ -17,15 +17,7 @@
         <h1>PlanktoScope {{$machineName}}</h1>
         <p>
           Welcome! This is the home page for your PlanktoScope with machine name
-          <code>{{$machineName}}</code>. If you're looking for a different PlanktoScope, you should
-          try to open it at its machine-specific URL.
-          {{if hasSuffix ".planktoscope" $hostname}}
-             For example, the machine-specific URL for this planktoscope is
-            <code>{{$machineName}}.planktoscope</code>.
-          {{else if and (hasPrefix "planktoscope" $hostname) (hasSuffix ".local" $hostname)}}
-             For example, the machine-specific URL for this planktoscope is
-            <code>planktoscope-{{$machineName}}.local</code>.
-          {{end}}
+          <code>{{$machineName}}</code>.
         </p>
         <p>
           Below you can find a list of links to browser applications provided by your PlanktoScope,
@@ -53,6 +45,29 @@
         </ul>
 
         <h2>Need help?</h2>
+
+        <h3 class="is-size-5">Wrong PlanktoScope?</h3>
+        <p>
+          If you're looking for a different PlanktoScope:
+        </p>
+        <ul>
+          <li>
+            You should navigate your web browser to that PlanktoScope's machine-specific URL
+            instead.
+            {{if hasSuffix ".planktoscope" $hostname}}
+              For example, the machine-specific URL for this PlanktoScope is
+              <code>{{$machineName}}.planktoscope</code>.
+            {{else if and (hasPrefix "planktoscope" $hostname) (hasSuffix ".local" $hostname)}}
+              For example, the machine-specific URL for this PlanktoScope is
+              <code>planktoscope-{{$machineName}}.local</code>.
+            {{end}}
+          </li>
+          <li>
+            If you're connecting locally to a PlanktoScope over Wi-Fi or Ethernet, you might need to
+            change your network configuration to connect to that PlanktoScope's Wi-Fi network or Ethernet
+            port, instead of <code>{{$machineName}}</code>'s Wi-Fi network or Ethernet port.
+          </li>
+        </ul>
 
         <h3 class="is-size-5">Documentation</h3>
         <p>Accessible offline:</p>
