@@ -48,24 +48,57 @@
 
         <h3 class="is-size-5">Wrong PlanktoScope?</h3>
         <p>
-          If you're looking for a different PlanktoScope:
+          This PlanktoScope has machine name <code>{{$machineName}}</code>. If you're looking for a
+          different PlanktoScope:
         </p>
         <ul>
           <li>
-            You should navigate your web browser to that PlanktoScope's machine-specific URL
+            You should use your web browser to open that PlanktoScope's machine-specific URL
             instead.
             {{if hasSuffix ".planktoscope" $hostname}}
               For example, the machine-specific URL for this PlanktoScope is
-              <code>{{$machineName}}.planktoscope</code>.
+              <a href="{{$machineName}}.planktoscope">
+                {{- /* make template ignore the line break */ -}}
+                {{$machineName}}.planktoscope
+                {{- /* make template ignore the line break */ -}}
+              </a>.
+              Alternatively,
+              <a href="planktoscope-{{$machineName}}.local">
+                {{- /* make template ignore the line break */ -}}
+                planktoscope-{{$machineName}}.local
+                {{- /* make template ignore the line break */ -}}
+              </a>
+              might also work if your web browser supports mDNS.
             {{else if and (hasPrefix "planktoscope" $hostname) (hasSuffix ".local" $hostname)}}
               For example, the machine-specific URL for this PlanktoScope is
-              <code>planktoscope-{{$machineName}}.local</code>.
+              <a href="planktoscope-{{$machineName}}.local</a">
+                {{- /* make template ignore the line break */ -}}
+                planktoscope-{{$machineName}}.local
+                {{- /* make template ignore the line break */ -}}
+              </a>.
+              Alternatively,
+              <a href="{{$machineName}}.planktoscope">
+                {{- /* make template ignore the line break */ -}}
+                {{$machineName}}.planktoscope
+                {{- /* make template ignore the line break */ -}}
+              </a>
+              might also work if you're connecting directly to your PlanktoScope (i.e. to its
+              Ethernet port or to a Wi-Fi network created by your PlanktoScope) and your web browser
+              isn't using Private DNS to look up domain names.
             {{end}}
           </li>
           <li>
-            If you're connecting locally to a PlanktoScope over Wi-Fi or Ethernet, you might need to
-            change your network configuration to connect to that PlanktoScope's Wi-Fi network or Ethernet
-            port, instead of <code>{{$machineName}}</code>'s Wi-Fi network or Ethernet port.
+            {{if hasSuffix ".planktoscope" $hostname}}
+              You're probably trying to connect directly to your PlanktoScope (i.e. to its Ethernet
+              port or to a Wi-Fi network created by that PlanktoScope). You
+            {{else}}
+              If you're trying to connect directly to a different PlanktoScope (i.e. to its Ethernet
+              port or to a Wi-Fi network created by that PlanktoScope), you
+            {{end}}
+            might need to change your
+            network configuration in order to connect to that PlanktoScope's Wi-Fi network or
+            Ethernet port, and you might also need to disconnect from
+            <code>{{$machineName}}</code>'s Wi-Fi network or Ethernet port.
           </li>
         </ul>
 
