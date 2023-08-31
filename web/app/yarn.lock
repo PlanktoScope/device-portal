@@ -60,15 +60,15 @@
   resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.48.0.tgz#642633964e217905436033a2bd08bf322849b7fb"
   integrity sha512-ZSjtmelB7IJfWD2Fvb7+Z+ChTIKWq6kjda95fLcQKNS5aheVHn4IkfgRQE3sIIzTcSLwLcLZUD9UBt+V7+h+Pw==
 
-"@fontsource/atkinson-hyperlegible@^5.0.9":
-  version "5.0.9"
-  resolved "https://registry.yarnpkg.com/@fontsource/atkinson-hyperlegible/-/atkinson-hyperlegible-5.0.9.tgz#688bf97cfd0f49a6b4932ca9ad7a1919bf0f590f"
-  integrity sha512-kFdxJvUEJC521EBvnL2Qhp1qQYnWiGhQAwzS1YvCF4FoyqCy1Rqx1Ok9d9n24VfAW1XZXE3AlXxUMHrYj6tmsA==
+"@fontsource/atkinson-hyperlegible@^5.0.11":
+  version "5.0.11"
+  resolved "https://registry.yarnpkg.com/@fontsource/atkinson-hyperlegible/-/atkinson-hyperlegible-5.0.11.tgz#603225ed9b21f0bcda34a8f0226b50109d48b95f"
+  integrity sha512-wHzGH0ykPXJa2fxliI6ZBplgQ09miYlHDml39g7ILy2h1+Dr/pMdmy4pimuWsRarCVk631atnrxZdJkxTyn20g==
 
-"@fontsource/oxygen-mono@^5.0.9":
-  version "5.0.9"
-  resolved "https://registry.yarnpkg.com/@fontsource/oxygen-mono/-/oxygen-mono-5.0.9.tgz#d01f98ecdf3b4bacef3c0b261e6b8d595f941614"
-  integrity sha512-3BIOEug9HzOCnlfZukG/WXhx4ZEs1df3EiAVkWXQA2AzGrBXCwsZDlnka2JTKvs5a5WnHYF3rt2nL1r14TvmGw==
+"@fontsource/oxygen-mono@^5.0.11":
+  version "5.0.11"
+  resolved "https://registry.yarnpkg.com/@fontsource/oxygen-mono/-/oxygen-mono-5.0.11.tgz#187cb146eef9b971e7137d15da94b7ae2a569b37"
+  integrity sha512-PWoVj2dpIu3S+vIYrQJU7VNTNQUMMcl5QCBUVbP0bwiVIcmSP6bSdpa2rE5YS3hUZQetGcIWdjklBB+U6ljkiw==
 
 "@humanwhocodes/config-array@^0.11.10":
   version "0.11.10"
@@ -191,10 +191,10 @@
     estree-walker "^2.0.2"
     picomatch "^2.3.1"
 
-"@sargassum-world/styles@^0.2.2":
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/@sargassum-world/styles/-/styles-0.2.2.tgz#3df48dff01ec1691f0c8f68326480a4e9471cede"
-  integrity sha512-Oxc3PrkVEB29LzqpbxfzyRKKkhnK8USHdC5VeQe2na9/6ImKBxOJT6Y0Zv34njnL3XUboDvyTjKZQ6sEdpZ2fA==
+"@sargassum-world/styles@^0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@sargassum-world/styles/-/styles-0.3.0.tgz#be152185fdde32b390d8f515d012666231b8fdf3"
+  integrity sha512-AKphUyCx7ViqebvukWP7n1Rf4Pf8M9nOYAfIJwGIHV3ba28TYZcmYoeCMi/nmjeLgfAn33/CdYbPH0FGbB4lkQ==
 
 "@types/estree@*":
   version "0.0.51"
@@ -1887,10 +1887,10 @@ prelude-ls@^1.2.1:
   resolved "https://registry.yarnpkg.com/prelude-ls/-/prelude-ls-1.2.1.tgz#debc6489d7a6e6b0e7611888cec880337d316396"
   integrity sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==
 
-prettier@^3.0.2:
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-3.0.2.tgz#78fcecd6d870551aa5547437cdae39d4701dca5b"
-  integrity sha512-o2YR9qtniXvwEZlOKbveKfDQVyqxbEIWn48Z8m3ZJjBjcCmUy3xZGIv+7AkaeuaTr6yPXJjwv07ZWlsWbEy1rQ==
+prettier@^3.0.3:
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-3.0.3.tgz#432a51f7ba422d1469096c0fdc28e235db8f9643"
+  integrity sha512-L/4pUDMxcNa8R/EthV08Zt42WBO4h1rarVtK0K+QJG0X187OLo7l699jWw0GKuwzkPQ//jMFA/8Xm6Fh3J/DAg==
 
 pseudomap@^1.0.2:
   version "1.0.2"

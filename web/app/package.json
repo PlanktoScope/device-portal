@@ -12,11 +12,11 @@
     "@rollup/plugin-commonjs": "^25.0.4",
     "@rollup/plugin-node-resolve": "^15.2.1",
     "@rollup/plugin-replace": "^5.0.2",
-    "@sargassum-world/styles": "^0.2.2",
+    "@sargassum-world/styles": "^0.3.0",
     "bulma": "^0.9.4",
     "eslint": "^8.48.0",
     "eslint-plugin-import": "^2.28.1",
-    "prettier": "^3.0.2",
+    "prettier": "^3.0.3",
     "purify-css": "^1.2.5",
     "rollup": "^3.28.1",
     "rollup-plugin-copy": "^3.4.0",
@@ -26,7 +26,7 @@
     "sass": "^1.66.1"
   },
   "dependencies": {
-    "@fontsource/atkinson-hyperlegible": "^5.0.9",
-    "@fontsource/oxygen-mono": "^5.0.9"
+    "@fontsource/atkinson-hyperlegible": "^5.0.11",
+    "@fontsource/oxygen-mono": "^5.0.11"
   }
 }
