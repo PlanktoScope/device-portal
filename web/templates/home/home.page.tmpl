@@ -57,13 +57,13 @@
             instead.
             {{if hasSuffix ".planktoscope" $hostname}}
               For example, the machine-specific URL for this PlanktoScope is
-              <a href="{{$machineName}}.planktoscope">
+              <a href="//{{$machineName}}.planktoscope">
                 {{- /* make template ignore the line break */ -}}
                 {{$machineName}}.planktoscope
                 {{- /* make template ignore the line break */ -}}
               </a>.
               Alternatively,
-              <a href="planktoscope-{{$machineName}}.local">
+              <a href="//planktoscope-{{$machineName}}.local">
                 {{- /* make template ignore the line break */ -}}
                 planktoscope-{{$machineName}}.local
                 {{- /* make template ignore the line break */ -}}
@@ -71,13 +71,13 @@
               might also work if your web browser supports mDNS.
             {{else if and (hasPrefix "planktoscope" $hostname) (hasSuffix ".local" $hostname)}}
               For example, the machine-specific URL for this PlanktoScope is
-              <a href="planktoscope-{{$machineName}}.local</a">
+              <a href="//planktoscope-{{$machineName}}.local</a">
                 {{- /* make template ignore the line break */ -}}
                 planktoscope-{{$machineName}}.local
                 {{- /* make template ignore the line break */ -}}
               </a>.
               Alternatively,
-              <a href="{{$machineName}}.planktoscope">
+              <a href="//{{$machineName}}.planktoscope">
                 {{- /* make template ignore the line break */ -}}
                 {{$machineName}}.planktoscope
                 {{- /* make template ignore the line break */ -}}
