@@ -71,7 +71,7 @@
               might also work if your web browser supports mDNS.
             {{else if and (hasPrefix "planktoscope" $hostname) (hasSuffix ".local" $hostname)}}
               For example, the machine-specific URL for this PlanktoScope is
-              <a href="//planktoscope-{{$machineName}}.local</a">
+              <a href="//planktoscope-{{$machineName}}.local">
                 {{- /* make template ignore the line break */ -}}
                 planktoscope-{{$machineName}}.local
                 {{- /* make template ignore the line break */ -}}
