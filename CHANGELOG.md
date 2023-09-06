@@ -8,6 +8,12 @@ All dates in this file are given in the [UTC time zone](https://en.wikipedia.org
 
 ## Unreleased
 
+## 0.1.7 - 2023-09-06
+
+### Changed
+
+- Shortened machine names and updated information about machine-specific domain names and URLs to use the new `pkscope` abbreviation instead of `planktoscope` (see [PlanktoScope#214](https://github.com/PlanktoScope/PlanktoScope/pull/214)).
+
 ## 0.1.6 - 2023-08-10
 
 ### Changed
