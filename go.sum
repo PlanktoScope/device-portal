@@ -4,8 +4,8 @@ github.com/Masterminds/semver/v3 v3.2.0 h1:3MEsd0SM6jqZojhjLWWeBY+Kcjy9i6MQAeY7Y
 github.com/Masterminds/semver/v3 v3.2.0/go.mod h1:qvl/7zhW3nngYb5+80sSMF+FG2BjYrf8m9wsX0PNOMQ=
 github.com/Masterminds/sprig/v3 v3.2.3 h1:eL2fZNezLomi0uOLqjQoN6BfsDD+fyLtgbJMAj9n6YA=
 github.com/Masterminds/sprig/v3 v3.2.3/go.mod h1:rXcFaZ2zZbLRJv/xSysmlgIM1u11eBaRMhvYXJNkGuM=
-github.com/PlanktoScope/machine-name v0.1.2 h1:+xwlbwa2Hjf0WlUZPjRztD2AHsegwFjkqVB0tBw1cqA=
-github.com/PlanktoScope/machine-name v0.1.2/go.mod h1:lonYg8/9fOwpJZdV8w69nYw+VsOnEx14EXKw3VPvw54=
+github.com/PlanktoScope/machine-name v0.1.3 h1:vOorbZm5QcEJTrmruYpxX81eyWXJPQDNf2ZdydZdyy0=
+github.com/PlanktoScope/machine-name v0.1.3/go.mod h1:38x/CvfkMFPAr5xnnDyi0pfln7jo8e/oSVMQR4g+yoU=
 github.com/benbjohnson/hashfs v0.2.1 h1:pxfukDsRT7iwBcICHCNsqQoopYV+gUQw5yPDiYt8A6M=
 github.com/benbjohnson/hashfs v0.2.1/go.mod h1:7OMXaMVo1YkfiIPxKrl7OXkUTUgWjmsAKyR+E6xDIRM=
 github.com/bmatcuk/doublestar/v4 v4.6.0 h1:HTuxyug8GyFbRkrffIpzNCSK4luc0TY3wzXvzIZhEXc=
