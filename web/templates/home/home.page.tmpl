@@ -55,31 +55,31 @@
           <li>
             You should use your web browser to open that PlanktoScope's machine-specific URL
             instead.
-            {{if hasSuffix ".planktoscope" $hostname}}
+            {{if hasSuffix ".pkscope" $hostname}}
               For example, the machine-specific URL for this PlanktoScope is
-              <a href="//{{$machineName}}.planktoscope">
+              <a href="//{{$machineName}}.pkscope">
                 {{- /* make template ignore the line break */ -}}
-                {{$machineName}}.planktoscope
+                {{$machineName}}.pkscope
                 {{- /* make template ignore the line break */ -}}
               </a>.
               Alternatively,
-              <a href="//planktoscope-{{$machineName}}.local">
+              <a href="//pkscope-{{$machineName}}.local">
                 {{- /* make template ignore the line break */ -}}
-                planktoscope-{{$machineName}}.local
+                pkscope-{{$machineName}}.local
                 {{- /* make template ignore the line break */ -}}
               </a>
               might also work if your web browser supports mDNS.
-            {{else if and (hasPrefix "planktoscope" $hostname) (hasSuffix ".local" $hostname)}}
+            {{else if and (hasPrefix "pkscope" $hostname) (hasSuffix ".local" $hostname)}}
               For example, the machine-specific URL for this PlanktoScope is
-              <a href="//planktoscope-{{$machineName}}.local">
+              <a href="//pkscope-{{$machineName}}.local">
                 {{- /* make template ignore the line break */ -}}
-                planktoscope-{{$machineName}}.local
+                pkscope-{{$machineName}}.local
                 {{- /* make template ignore the line break */ -}}
               </a>.
               Alternatively,
-              <a href="//{{$machineName}}.planktoscope">
+              <a href="//{{$machineName}}.pkscope">
                 {{- /* make template ignore the line break */ -}}
-                {{$machineName}}.planktoscope
+                {{$machineName}}.pkscope
                 {{- /* make template ignore the line break */ -}}
               </a>
               might also work if you're connecting directly to your PlanktoScope (i.e. to its
@@ -88,7 +88,7 @@
             {{end}}
           </li>
           <li>
-            {{if hasSuffix ".planktoscope" $hostname}}
+            {{if hasSuffix ".pkscope" $hostname}}
               You're probably trying to connect directly to your PlanktoScope (i.e. to its Ethernet
               port or to a Wi-Fi network created by that PlanktoScope). You
             {{else}}
