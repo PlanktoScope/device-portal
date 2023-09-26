@@ -8,6 +8,11 @@ All dates in this file are given in the [UTC time zone](https://en.wikipedia.org
 
 ## Unreleased
 
+### Changed
+
+- All links now open in new tabs (see [PlanktoScope#231](https://github.com/PlanktoScope/PlanktoScope/pull/231)).
+- The landing page now shows a deprecation notice to the user if it is accessed using the `planktoscope.local` hostname.
+
 ## 0.1.7 - 2023-09-06
 
 ### Changed
