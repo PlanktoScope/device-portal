@@ -26,7 +26,7 @@
     "sass": "^1.67.0"
   },
   "dependencies": {
-    "@fontsource/atkinson-hyperlegible": "^5.0.12",
+    "@fontsource/atkinson-hyperlegible": "^5.0.13",
     "@fontsource/oxygen-mono": "^5.0.12"
   }
 }
