@@ -60,10 +60,10 @@
   resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.50.0.tgz#9e93b850f0f3fa35f5fa59adfd03adae8488e484"
   integrity sha512-NCC3zz2+nvYd+Ckfh87rA47zfu2QsQpvc6k1yzTk+b9KzRj0wkGa8LSoGOXN6Zv4lRf/EIoZ80biDh9HOI+RNQ==
 
-"@fontsource/atkinson-hyperlegible@^5.0.12":
-  version "5.0.12"
-  resolved "https://registry.yarnpkg.com/@fontsource/atkinson-hyperlegible/-/atkinson-hyperlegible-5.0.12.tgz#76e9f761a853202180e31036f04aa319c5fffc05"
-  integrity sha512-chlxS4rZcGbC4iObID+AmsXOIBvbxl65PUMQdSl+aQU5b1EvfYaKe97rLwcc6vGXp1OkkLl3MpBhv32wkZjkrg==
+"@fontsource/atkinson-hyperlegible@^5.0.17":
+  version "5.0.17"
+  resolved "https://registry.yarnpkg.com/@fontsource/atkinson-hyperlegible/-/atkinson-hyperlegible-5.0.17.tgz#d1a43a7403644f6ad31a54e8e1ae779693fbcd9d"
+  integrity sha512-Evhr7GER/hFVxYj93msIC/BxEDpIMU27C42alWeILCyWsQEu3AWKLxQY/IVZyLrpgVT1ktWAXnH52WS1NarPPg==
 
 "@fontsource/oxygen-mono@^5.0.13":
   version "5.0.13"
