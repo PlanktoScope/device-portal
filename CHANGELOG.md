@@ -8,16 +8,47 @@ All dates in this file are given in the [UTC time zone](https://en.wikipedia.org
 
 ## Unreleased
 
+## 0.1.12 - 2023-12-01
+
 ### Changed
 
 - All links now open in new tabs (see [PlanktoScope#231](https://github.com/PlanktoScope/PlanktoScope/pull/231)).
 - The landing page now shows a deprecation notice to the user if it is accessed using the `planktoscope.local` hostname.
+- The URL for the online PlanktoScope project documentation has been changed from the old site (<https://planktoscope.readthedocs.io>) to the new site (<https://docs.planktoscope.community>).
 
-## 0.1.7 - 2023-09-06
+## 0.1.11 - 2023-09-06
 
 ### Changed
 
 - Shortened machine names and updated information about machine-specific domain names and URLs to use the new `pkscope` abbreviation instead of `planktoscope` (see [PlanktoScope#214](https://github.com/PlanktoScope/PlanktoScope/pull/214)).
+
+### Fixed
+
+- Fixed mistakes in machine-specific URLs.
+
+## 0.1.10 - 2023-08-31
+
+### Added
+
+- Added more information to the "Wrong PlanktoScope?" section to help users troubleshoot situations where they're connected to the wrong PlanktoScope.
+
+## 0.1.9 - 2023-08-31
+
+### Fixed
+
+- Fixed the ability to scroll the landing page with arrow keys upon initial load (rather than having to click on the landing page first).
+
+## 0.1.8 - 2023-08-29
+
+### Added
+
+- Added link to a file browser for the device-backend's logs
+
+## 0.1.7 - 2023-08-22
+
+### Added
+
+- Added links to offline copies of the PlanktoScope quantitative protocols from protocols.io.
 
 ## 0.1.6 - 2023-08-10
 
