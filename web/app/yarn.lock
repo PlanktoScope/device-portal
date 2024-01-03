@@ -65,10 +65,10 @@
   resolved "https://registry.yarnpkg.com/@fontsource/atkinson-hyperlegible/-/atkinson-hyperlegible-5.0.18.tgz#af9447af0cccb36b6fe10b8b44511ab1f4dd7355"
   integrity sha512-94htZ6Q0UQVEEzbSy/IEmRuGH06Y4Qv+xZJHfCQrc2QCdcHxtdqw6tUXwLyCfiPqtI5oomsh2Un7Pnls4o4NRA==
 
-"@fontsource/oxygen-mono@^5.0.17":
-  version "5.0.17"
-  resolved "https://registry.yarnpkg.com/@fontsource/oxygen-mono/-/oxygen-mono-5.0.17.tgz#1f495be7ba1f46b1ceb5e2e449254747f0553c1d"
-  integrity sha512-5txRjG3fK36n3Mxbsca2L2+Q4+/d5MtrCRyTCQfMxDBwv1TdcXJ+80h175WbL8EJx7mgmOyPk1auVoZVWnHKDQ==
+"@fontsource/oxygen-mono@^5.0.18":
+  version "5.0.18"
+  resolved "https://registry.yarnpkg.com/@fontsource/oxygen-mono/-/oxygen-mono-5.0.18.tgz#73a4c533fd88edea33724b6b4af0a331bd53af60"
+  integrity sha512-ug1vtn0Iv//OBwaqu8+YygfkPo+LOe4svg79bqz2ffjTkfCzo0ZdDxsQiqqdSzMQlOIq9DnQnwSWEEZtRWXHeg==
 
 "@humanwhocodes/config-array@^0.11.13":
   version "0.11.13"
