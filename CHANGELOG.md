@@ -8,6 +8,8 @@ All dates in this file are given in the [UTC time zone](https://en.wikipedia.org
 
 ## Unreleased
 
+## 0.1.13 - 2024-01-10
+
 ### Added
 
 - Added a link to the Dozzle log viewer.
