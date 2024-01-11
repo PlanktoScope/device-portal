@@ -53,6 +53,10 @@
             <strong><a href="/admin/ps/device-backend-logs/browse/" target="_blank">Backend logs file manager</a></strong>:
             Provides a file browsing and management interface for the PlanktoScope device backend's logs
           </li>
+          <li>
+            <strong><a href="/admin/grafana/" target="_blank">Grafana</a></strong>:
+            Provides a graphical dashboard for monitoring system and application metrics
+          </li>
         </ul>
 
         <h2>Need help?</h2>
@@ -208,12 +212,12 @@
             computer embedded in the PlanktoScope
           </li>
           <li>
-            <strong><a href="/admin/portainer/" target="_blank">Portainer</a></strong>:
-            Provides a Docker administration dashboard
-          </li>
-          <li>
             <strong><a href="/admin/dozzle/" target="_blank">Dozzle</a></strong>:
             Provides a Docker container log viewer
+          </li>
+          <li>
+            <strong><a href="/admin/portainer/" target="_blank">Portainer</a></strong>:
+            Provides a Docker administration dashboard
           </li>
         </ul>
         <p>Software development:</p>
@@ -270,6 +274,14 @@
           </li>
         </ul>
 
+        <p>System administration and troubleshooting:</p>
+        <ul>
+          <li>
+            <strong>Host metrics</strong>:
+            Provides metrics about the Raspberry Pi at <code>{{$hostname}}:9100/metrics</code>
+          </li>
+        </ul>
+
         <h3 class="is-size-5">System infrastructure</h3>
         <p>Networking:</p>
         <ul>
@@ -290,6 +302,14 @@
             <strong><a href="/" target="_blank">Device portal</a></strong>:
             Provides a landing page as a portal to the browser applications, network APIs, and system
             infrastructure on the PlanktoScope
+          </li>
+        </ul>
+
+        <p>System administration and troubleshooting:</p>
+        <ul>
+          <li>
+            <strong><a href="/admin/prometheus/" target="_blank">Prometheus server</a></strong>:
+            Records, aggregates, and monitors metrics
           </li>
         </ul>
       </div>
