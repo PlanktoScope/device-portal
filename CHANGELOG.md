@@ -8,6 +8,12 @@ All dates in this file are given in the [UTC time zone](https://en.wikipedia.org
 
 ## Unreleased
 
+### Added
+
+- Added a link to the Grafana dashboard.
+- Added an API entry for the node-exporter host metrics.
+- Added an infrastructure entry for the Prometheus server.
+
 ## 0.1.13 - 2024-01-10
 
 ### Added
