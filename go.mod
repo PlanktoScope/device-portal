@@ -1,6 +1,6 @@
 module github.com/PlanktoScope/device-portal
 
-go 1.20
+go 1.22
 
 require (
 	github.com/Masterminds/sprig/v3 v3.2.3
