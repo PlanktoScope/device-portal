@@ -13,7 +13,7 @@
     "@rollup/plugin-node-resolve": "^15.2.3",
     "@rollup/plugin-replace": "^5.0.5",
     "@sargassum-world/styles": "^0.3.0",
-    "bulma": "^0.9.4",
+    "bulma": "^1.0.0",
     "eslint": "^8.57.0",
     "eslint-plugin-import": "^2.29.1",
     "prettier": "^3.2.5",
