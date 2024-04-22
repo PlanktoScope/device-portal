@@ -8,6 +8,12 @@ All dates in this file are given in the [UTC time zone](https://en.wikipedia.org
 
 ## Unreleased
 
+## 0.2.0 - 2024-04-22
+
+### Changed
+
+- (Breaking change) Instead of generating a machine name from a serial number which is either specified as the `MACHINENAME_SN` environment variable or loaded from a file specified by the `MACHINENAME_SNFILE` environment variable, now the device portal just tries to load the machine name from the `MACHINENAME_NAME` environment variable or else from a file specified by the `MACHINENAME_NAMEFILE` environment variable (which defaults to `/run/machine-name`), and it falls back to a name of "unknown" if no machine name is found.
+
 ## 0.1.15 - 2024-01-11
 
 ### Fixed

@@ -6,11 +6,8 @@ package machinename
 import (
 	"os"
 	"path/filepath"
-	"strconv"
 	"strings"
 
-	"github.com/PlanktoScope/machine-name/pkg/haikunator"
-	"github.com/PlanktoScope/machine-name/pkg/wordlists"
 	"github.com/pkg/errors"
 	"github.com/sargassum-world/godest"
 	"github.com/sargassum-world/godest/clientcache"
@@ -52,16 +49,13 @@ func (c *Client) getNameFromCache() (string, bool) {
 }
 
 func (c *Client) getNameFromSystem() (string, error) {
-	sn, err := c.getSerialNumber()
+	name, err := c.getMachineName()
 	if err != nil {
-		return "", errors.Wrap(err, "couldn't determine serial number")
-	}
-	name, err := generateMachineName(c.Config.Lang, sn)
-	if err != nil {
-		return "", errors.Wrapf(
-			err, "couldn't generate machine name from serial number %d in language %s",
-			sn, c.Config.Lang,
+		c.Logger.Warnf(
+			"falling back to 'unknown' as the machine name, which couldn't be determined: %s",
+			err.Error(),
 		)
+		return "unknown", nil
 	}
 	if err := c.Cache.SetName(name, c.Config.CacheCost); err != nil {
 		return "", errors.Wrapf(err, "couldn't cache machine name %s", name)
@@ -72,34 +66,15 @@ func (c *Client) getNameFromSystem() (string, error) {
 	return name, nil
 }
 
-func (c *Client) getSerialNumber() (sn uint32, err error) {
-	rawSN := env.GetString(envPrefix+"SN", "")
-	if rawSN == "" {
-		rawFile, err := os.ReadFile(filepath.Clean(c.Config.SNFile))
+func (c *Client) getMachineName() (string, error) {
+	name := env.GetString(envPrefix+"NAME", "")
+	if name == "" {
+		rawFile, err := os.ReadFile(filepath.Clean(c.Config.NameFile))
 		if err != nil {
-			return 0, errors.Wrapf(err, "couldn't read serial number from file '%s'", c.Config.SNFile)
+			return "", errors.Wrapf(err, "couldn't read machine name from file %s", c.Config.NameFile)
 		}
-		rawSN = strings.TrimSpace(strings.TrimRight(string(rawFile), "\x00"))
-		const length = 8 // 8 hex chars = 32 bits
-		if len(rawSN) > length {
-			rawSN = rawSN[len(rawSN)-length:]
-		}
+		name = strings.TrimSpace(string(rawFile))
 	}
 
-	return parseSerialNumber(rawSN)
-}
-
-func parseSerialNumber(raw string) (uint32, error) {
-	const base = 16
-	const parsedWidth = 32
-	parsed64, err := strconv.ParseUint(strings.TrimPrefix(raw, "0x"), base, parsedWidth)
-	return uint32(parsed64), errors.Wrapf(err, "couldn't parse serial number '%s'", raw)
-}
-
-func generateMachineName(lang string, sn uint32) (name string, err error) {
-	first, second, err := wordlists.Load(wordlists.FS, lang)
-	if err != nil {
-		return "", errors.Wrapf(err, "couldn't load naming wordlists for language '%s", lang)
-	}
-	return haikunator.SelectName(sn, first, second), nil
+	return name, nil
 }

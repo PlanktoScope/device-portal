@@ -4,7 +4,6 @@ go 1.22
 
 require (
 	github.com/Masterminds/sprig/v3 v3.2.3
-	github.com/PlanktoScope/machine-name v0.1.3
 	github.com/benbjohnson/hashfs v0.2.2
 	github.com/dgraph-io/ristretto v0.1.1
 	github.com/labstack/echo/v4 v4.11.4

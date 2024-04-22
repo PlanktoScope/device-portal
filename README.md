@@ -18,12 +18,12 @@ tar -xzf device-portal_{version number}_{os}_{cpu architecture}.tar.gz device-po
 
 Then you may need to move the device-portal binary into a directory in your system path, or you can just run the device-portal binary in your current directory (in which case you should replace `device-portal` with `./device-portal` in the commands listed below).
 
-Once you have device-portal, you should run it as follows on a Raspberry Pi:
+Once you have device-portal, you can run it as follows on a Raspberry Pi:
 ```
-device-portal
+./device-portal
 ```
 
-Then you can view the landing page at http://localhost:3000 . Note that if you are running it on a computer other than the Raspberry Pi with the standard PlanktoScope software distribution, then you will need to set some environment variables (see below) to non-default values.
+Then you can view the landing page at http://localhost:3000 . Note that if you are running it on a computer other than the Raspberry Pi with the standard PlanktoScope OS, then you will need to set some environment variables (see below) to non-default values.
 
 ### Development
 
@@ -39,14 +39,16 @@ To execute the full build pipeline, run `make`; to build the docker images, run 
 
 ### Environment Variables
 
-If you are running device-portal on a computer which is not a Raspberry Pi with the standard PlanktoScope software distribution, then you'll need to set some environment variables. Specifically, you'll need to set:
+If you are running device-portal on a computer which is not a Raspberry Pi with the standard PlanktoScope OS, then you'll need to set some environment variables. Specifically, you'll need to set:
 
-- Either `MACHINENAME_SN`, which should be a 32-bit hex number representing the computer's serial number (which is used for determining the computer's machine name to be displayed on the landing page), or `MACHINENAME_SNFILE`, which should be the path to a file containing a hex number, the least-significant 32 bits of which will be interpreted as a 32-bit serial number.
+- Either `MACHINENAME_NAME`, which should be a string representing the name of the machine to be displayed on the landing page, or `MACHINENAME_NAMEFILE`, which should be the path to a file containing the name of the machine to be displayed on the landing page.
 
-For example, you could run device-portal with the fake serial number `0xdeadc0de` using any of the following commands:
+For example, you could run device-portal with the machine name `metal-slope-23501` with one of the following commands:
 ```
-MACHINENAME_SN=deadc0de make run
-MACHINENAME_SN=0xdeadc0de make run
+# If you downloaded a device-portal binary:
+MACHINENAME_NAME=metal-slope-23501 ./device-portal
+# If you are developing the project:
+MACHINENAME_NAME=metal-slope-23501 make run
 ```
 
 ## Licensing
