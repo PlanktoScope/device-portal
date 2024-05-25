@@ -8,6 +8,10 @@ All dates in this file are given in the [UTC time zone](https://en.wikipedia.org
 
 ## Unreleased
 
+### Removed
+
+- The links to Portainer have been removed, as part of the deprecation of Portainer in the default configuration of v2024.0.0 of the PlanktoScope OS.
+
 ### Fixed
 
 - The links to the offline copies of the operation protocols are no longer broken.
