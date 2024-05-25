@@ -8,6 +8,10 @@ All dates in this file are given in the [UTC time zone](https://en.wikipedia.org
 
 ## Unreleased
 
+### Fixed
+
+- The links to the offline copies of the operation protocols are no longer broken.
+
 ## 0.2.1 - 2024-04-23
 
 ### Fixed
