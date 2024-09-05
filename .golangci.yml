@@ -33,7 +33,7 @@ linters:
     - bodyclose
     # - depguard
     - dupl
-    - exportloopref
+    - copyloopvar
     - forcetypeassert
     - funlen
     - gci
@@ -43,7 +43,7 @@ linters:
     - gocyclo
     - godot
     - gofumpt
-    - gomnd
+    - mnd
     - goprintffuncname
     - gosec
     - lll

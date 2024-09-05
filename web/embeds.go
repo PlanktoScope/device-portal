@@ -61,7 +61,7 @@ func NewEmbeds() godest.Embeds {
 func NewInlines() godest.Inlines {
 	return godest.Inlines{
 		CSS: map[string]template.CSS{
-			"BundleEager": template.CSS(bundleEagerCSS),
+			"BundleEager": template.CSS(bundleEagerCSS), //nolint:gosec // it's CSS, so don't escape HTML
 		},
 		JS: map[string]template.JS{
 			//nolint:gosec // This is generated from code in web/app/src, so we know it's well-formed
