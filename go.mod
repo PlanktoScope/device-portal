@@ -10,7 +10,7 @@ require (
 	github.com/labstack/gommon v0.4.2
 	github.com/pkg/errors v0.9.1
 	github.com/sargassum-world/godest v0.5.1
-	github.com/unrolled/secure v1.15.0
+	github.com/unrolled/secure v1.16.0
 	golang.org/x/sync v0.8.0
 )
 
