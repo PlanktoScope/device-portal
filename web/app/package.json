@@ -11,7 +11,7 @@
   "devDependencies": {
     "@rollup/plugin-commonjs": "^26.0.1",
     "@rollup/plugin-node-resolve": "^15.2.3",
-    "@rollup/plugin-replace": "^5.0.7",
+    "@rollup/plugin-replace": "^6.0.1",
     "@sargassum-world/styles": "^0.3.0",
     "bulma": "~0.9.4",
     "eslint": "^8.57.0",
