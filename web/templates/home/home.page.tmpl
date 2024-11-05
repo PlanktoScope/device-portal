@@ -69,7 +69,7 @@
                 {{- /* make template ignore the line break */ -}}
               </a>
               might also work if your web browser supports mDNS.
-            {{else if and (hasPrefix "pkscope" $hostname) (hasSuffix ".local" $hostname)}}
+            {{else if hasSuffix ".local" $hostname}}
               For example, the machine-specific URL for this PlanktoScope is
               <a href="//pkscope-{{$machineName}}.local">
                 {{- /* make template ignore the line break */ -}}
