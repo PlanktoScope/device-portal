@@ -8,6 +8,12 @@ All dates in this file are given in the [UTC time zone](https://en.wikipedia.org
 
 ## Unreleased
 
+### Added
+
+- A warning has been added when the user access the landing page using any hostname other than `pkscope-{machine-name}.local`, that such a hostname will not work for accessing the PlanktoScope via a Wi-Fi router or Ethernet router, and instead `pkscope-{machine-name}.local` must be used in such situations.
+
+## 0.2.3 - 2024-06-21
+
 ### Removed
 
 - The deprecation warning for the `planktoscope.local` hostname has been removed, as that hostname is being undeprecated for v2024.0.0 (starting with v2024.0.0-beta.1).
