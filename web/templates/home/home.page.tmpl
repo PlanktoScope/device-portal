@@ -24,6 +24,21 @@
           documentation for operating your PlanktoScope, and other information to help you use your PlanktoScope.
         </p>
 
+        {{if not (and (hasPrefix "pkscope-" $hostname) (hasSuffix ".local" $hostname))}}
+          <article class="message is-warning">
+            <div class="message-body">
+              Note: you are using the hostname <code>{{$hostname}}</code>, which only works when you
+              are connecting directly to the PlanktoScope through its Wi-Fi hotspot or through an
+              Ethernet cable. If/when you want to connect to the PlanktoScope through a Wi-Fi router
+              or Ethernet router (for example because you have connected your PlanktoScope to the
+              internet through an external Wi-Fi network, which disables the PlanktoScope's Wi-Fi
+              hotspot), you will instead need to use
+              <a href="//pkscope-{{$machineName}}.local">pkscope-{{$machineName}}.local</a>
+              to access this PlanktoScope.
+            </div>
+          </article>
+        {{end}}
+
         <h2>Browser applications</h2>
         <p>PlanktoScope operation:</p>
         <ul>
