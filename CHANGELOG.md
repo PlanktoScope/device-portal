@@ -11,6 +11,11 @@ All dates in this file are given in the [UTC time zone](https://en.wikipedia.org
 ### Added
 
 - A warning has been added when the user access the landing page using any hostname other than `pkscope-{machine-name}.local`, that such a hostname will not work for accessing the PlanktoScope via a Wi-Fi router or Ethernet router, and instead `pkscope-{machine-name}.local` must be used in such situations.
+- A link has been added to a (new) offline/PDF copy of [version 3 of Fabien's PlanktoScope operation protocol](https://www.protocols.io/view/planktoscope-protocol-for-plankton-imaging-bp2l6bq3zgqe/v3).
+
+### Removed
+
+- The link to the offline/PDF copy of [version 1 of Fabien's PlanktoScope operation protocol](https://www.protocols.io/view/planktoscope-protocol-for-plankton-imaging-bp2l6bq3zgqe/v1) has been removed. The link to the online version remains.
 
 ## 0.2.3 - 2024-06-21
 
