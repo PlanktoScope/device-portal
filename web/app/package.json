@@ -27,6 +27,6 @@
   },
   "dependencies": {
     "@fontsource/atkinson-hyperlegible": "^5.2.5",
-    "@fontsource/oxygen-mono": "^5.2.0"
+    "@fontsource/oxygen-mono": "^5.2.5"
   }
 }
