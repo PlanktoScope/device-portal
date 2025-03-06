@@ -2,6 +2,8 @@ module github.com/PlanktoScope/device-portal
 
 go 1.23
 
+toolchain go1.24.1
+
 require (
 	github.com/Masterminds/sprig/v3 v3.3.0
 	github.com/benbjohnson/hashfs v0.2.2
