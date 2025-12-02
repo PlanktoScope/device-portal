@@ -1,6 +1,6 @@
 module github.com/PlanktoScope/device-portal
 
-go 1.24
+go 1.24.0
 
 require (
 	github.com/Masterminds/sprig/v3 v3.3.0
@@ -11,7 +11,7 @@ require (
 	github.com/pkg/errors v0.9.1
 	github.com/sargassum-world/godest v0.5.1
 	github.com/unrolled/secure v1.17.0
-	golang.org/x/sync v0.16.0
+	golang.org/x/sync v0.18.0
 )
 
 require (
